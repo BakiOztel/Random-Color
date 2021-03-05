@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.ustkisim{
+    border-style: solid;
+    border-color:#fff9f8;   
+    border-width:0.2px;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+.ustkisim h1{
+    width: 100%;
+    font-style:italic;
+    text-align: center;
+}
+
+#ana_ekran{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#ana_ekran h2{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    left: 750px;
+    top: 250px;
+    border-style: solid;
+    border-width: 0.7px;
+    border-radius: 25px;
+    
+}
+#ana_ekran #buton{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 850px;
+    top: 400px;
+    border-radius: 25px;
+    outline: none;
+}
+

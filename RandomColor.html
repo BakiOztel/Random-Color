@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proje2..css">
+    <title>Renk Değiştirme</title>
+</head>
+<body>
+    <nav class="ustkisim">
+        <h1>Renk Kod Bulma</h1>
+    </nav>
+    <main id="ana_ekran">
+        <h2 id="renk_kodu">Renk Kodu: <span id="kod">#FFFFFF</span></h2>
+        <button id="buton">Değiştir</button>
+
+    </main>
+<script>
+   document.body.style.width=String(window.innerWidth)+"px";
+   document.body.style.height=String(window.innerHeight)+"px";
+   const buton=document.getElementById("buton");
+   const spann=document.getElementById("kod");
+   const Renkler=[0,1,2,3,4,5,6,7,8,"A","B","C","D","E","F"];
+   var kodd="#"
+   buton.addEventListener("click",function(){
+       for(let i=0;i<6;i++){
+          kodd+=Renkler[randomSayı()];
+       }
+       document.body.style.backgroundColor=	kodd;
+       document.getElementById("kod").textContent=kodd;
+       kodd="#"
+   })
+   function randomSayı(){
+       
+       return Math.floor(Math.random()*Renkler.length);
+   }
+
+
+</script>
+</body>
+</html>
